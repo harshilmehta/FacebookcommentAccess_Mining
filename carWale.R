@@ -75,6 +75,22 @@ results$sentiment = NULL
 write.csv(results, "DATA1.csv", row.names = FALSE)
 
 
+while(i <= length(results))
+{
+if(results[i,6] == "NEGATIVE")
+results1 <- results[-i,]
+i = i+1
+}
+write.csv(results, "DATA2.csv", row.names = FALSE)
+
+
+
+
+
+
+
+
+
 
 
 
